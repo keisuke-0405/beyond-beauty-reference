@@ -75,9 +75,34 @@ img {
 .header__top .header__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: var(--container-width);
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.header__top-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.lang-switch {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #fff;
+  padding: 2px 10px;
+  font-size: 11px;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  line-height: 1.4;
+}
+
+.lang-switch:hover {
+  background-color: #fff;
+  color: var(--bb-primary);
+  border-color: #fff;
 }
 
 .header__main .header__container {
