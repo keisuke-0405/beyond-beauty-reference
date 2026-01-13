@@ -616,10 +616,19 @@ img {
     font-weight: 700;
     margin-bottom: 20px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Top align text */
+    min-height: 64px; /* Fixed height for alignment */
+    line-height: 1.3;
+}
+
+.visitor-profile__category span {
+    position: relative;
     display: inline-block;
 }
 
-.visitor-profile__category::after {
+.visitor-profile__category span::after {
     content: '';
     position: absolute;
     bottom: -10px;
